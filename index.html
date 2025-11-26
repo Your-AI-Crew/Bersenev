@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=960, initial-scale=1.0">
+    <title>Your AI Crew — Пилот с Александром Бересневым</title>
+    <style>
+        :root {
+            --color-dark: #172C3E;
+            --color-blue: #00C9FF;
+            --color-title-dark: #212836;
+            --color-text: #233046;
+            --font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+        }
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--color-text);
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 0 auto 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(34,48,70,0.08);
+            padding: 64px;
+            position: relative;
+        }
+        .main-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        /* УВЕЛИЧЕН размер основного заголовка: было 3rem, стало 3.6rem */
+        .title-main {
+            font-size: 3.6rem; /* увеличено, улучшает визуальное восприятие */
+            color: var(--color-title-dark);
+            font-weight: bold;
+            margin-bottom: 20px; /* немного увеличил отступ для "воздуха" */
+        }
+        /* УВЕЛИЧЕН размер подзаголовка: было 1.5rem, стало 1.9rem */
+        .subtitle-main {
+            font-size: 1.9rem; /* увеличен для лучшей читаемости */
+            color: var(--color-blue);
+            font-weight: bold;
+            margin-bottom: 18px; /* чуть больший отступ */
+        }
+        /* УВЕЛИЧЕН размер основного текста списка: было 1.25rem, стало 1.5rem */
+        .list {
+            font-size: 1.5rem;
+            margin-bottom: 36px; /* немного увеличен отступ */
+            color: var(--color-text);
+        }
+        /* УВЕЛИЧЕН размер заголовков разделов: было 2.2rem, стало 2.7rem */
+        .section-title {
+            font-size: 2.7rem;
+            font-weight: bold;
+            color: var(--color-title-dark);
+            margin-bottom: 20px; /* чуть больший отступ */
+        }
+        .infocard {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #e3fbff, #a5eaff, #fff 60%);
+            box-shadow: 0 3px 18px rgba(0,201,255,0.1);
+            border-radius: 16px;
+            padding: 26px 38px; /* увеличил паддинги */
+            margin-bottom: 18px; /* чуть увеличил отступ между блоками */
+        }
+        .icon {
+            width: 66px; /* увеличил иконку для баланса с большим текстом */
+            height: 66px;
+            margin-right: 30px;
+        }
+        /* УВЕЛИЧЕН размер текста в информационных карточках: было 1.15rem, стало 1.4rem */
+        .infotext {
+            font-size: 1.4rem;
+            color: #233046;
+            font-weight: 500;
+        }
+        .metric-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 36px 0 20px 0; /* увеличен верхний и нижний отступ */
+        }
+        /* УВЕЛИЧЕН размер текста в метриках: было 1.3rem, стало 1.5rem */
+        .metric {
+            background: #00C9FF;
+            border-radius: 24px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 22px 48px; /* увеличил паддинги */
+            margin-right: 20px;
+        }
+        .metric:last-child {margin-right:0;}
+        /* УВЕЛИЧЕН размер футера: было 1rem, стало 1.2rem, потом вернул 1rem */
+        .footer {
+            position: absolute;
+            bottom: 28px;
+            left: 64px;
+            font-size: 1rem;
+            color: #667eea;
+            opacity: 0.7;
+        }
+        @media (max-width: 1000px) {
+            .slide {padding: 30px;}
+            .main-logo {width: 64px; height:64px;}
+            .title-main {font-size: 2.5rem;} /* увеличено для маленьких экранов */
+        }
+    </style>
+</head>
+<body>
+  <!-- Slide 1 (title) -->
+  <section class="slide p-16 col center" style="align-items:center; text-align:center;">
+    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/61e02cfb-4bc6-4ee3-8727-cef326aac471" alt="Your AI Crew Logo" class="main-logo" />
+    <div class="title-main">Your AI Crew x Береснев</div>
+    <div class="subtitle-main">Пилот: Увеличение прибыли клиентов через AI</div>
+    <div class="list" style="margin-bottom:24px;">Совместный подход: управленческий порядок + AI‑сотрудники + AI‑продажники</div>
+    <div class="footer">Your AI Crew x Береснев | 2025</div>
+  </section>
+
+  <!-- Slide 2 (cинергия) -->
+  <section class="slide p-16 col">
+    <div class="section-title">Главная синергия</div>
+    <div class="infocard">
+      <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/61e02cfb-4bc6-4ee3-8727-cef326aac471" alt="Your AI Crew Brand" class="icon" />
+      <div class="infotext">
+        Управленческий порядок (твоё ядро) <br>
+        + AI‑сотрудники (контроль, дисциплина, прозрачность)<br>
+        + <span style="color:#00C9FF; font-weight:600;">AI‑продажники</span> (рост конверсии и прибыли)<br>
+        ⇒ Система, где результат измеряется в деньгах и росте бизнеса!
+      </div>
+    </div>
+    <div class="footer">Your AI Crew создает платформу для роста выручки</div>
+  </section>
+
+  <!-- Slide 3 (Пилот и выгоды) -->
+  <section class="slide p-16 col">
+    <div class="section-title">Пилот с действующим клиентом</div>
+    <div class="infocard">
+      <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/61e02cfb-4bc6-4ee3-8727-cef326aac471" alt="Your AI Crew Brand" class="icon" />
+      <div class="infotext">
+        1. Аудит управления и продаж <br>
+        2. Внедрение AI‑координатора (управление) и AI‑продажника (обработка лидов, апсейлы)<br>
+        3. Быстрое внедрение — 7–10 дней <br>
+        4. Фокус: <b>Рост прибыли, скорости, прозрачности</b>
+      </div>
+    </div>
+    <div class="metric-bar">
+      <div class="metric">+20–35% конверсия по лидам</div>
+      <div class="metric">6–10 ч/нед экономия времени ТОПов</div>
+      <div class="metric">≤2 мин скорость ответа клиенту</div>
+    </div>
+    <div class="footer">Итог: живые цифры в P&L уже в первый месяц пилота</div>
+  </section>
+
+  <!-- Slide 4 (Твоя выгода) -->
+  <section class="slide p-16 col">
+    <div class="section-title">Твоя выгода от партнёрства</div>
+    <div class="infocard">
+      <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/61e02cfb-4bc6-4ee3-8727-cef326aac471" alt="Your AI Crew Logo" class="icon" />
+      <div class="infotext">
+        • Комиссия 25% с первого платежа и 10% LTV <br>
+        • Рабочий кейс для портфеля <br>
+        • Персональный AI‑ассистент для твоих программ <br>
+        • Совместные Zoom-активаторы и мероприятия
+      </div>
+    </div>
+    <div class="footer">Управляй прибылью своих клиентов — вместе с Your AI Crew!</div>
+  </section>
+
+  <!-- Slide 5 (CTA) -->
+  <section class="slide p-16 col center" style="align-items:center;text-align:center;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#fff;">
+    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/61e02cfb-4bc6-4ee3-8727-cef326aac471" alt="Your AI Crew Logo" class="main-logo" />
+    <div class="title-main" style="color:#fff;margin-bottom:20px;">Готов обсудить?</div>
+    <div style="font-size:1.5rem;">Достаточно коротко созвониться — выберем пилот, запуск и дни для стартовых результатов<br><br>
+    <b>Your AI Crew</b> — фундамент для управляемого роста прибыли</div>
+    
+    
+    <!-- ДОБАВЛЕНО больше пространства перед кнопками (margin-bottom:60px выше) -->
+    <!-- ДОБАВЛЕНА пустая визуальная строка для дополнительного отступа -->
+    <div style="height:30px;"></div>
+
+      <!-- ДОБАВЛЕНЫ активные кнопки в едином стиле презентации -->
+    <div style="display:flex; gap:24px; justify-content:center; margin-bottom:40px;">
+      <a href="https://calendar.app.google/VTFBbGxPBuk1SQ2UA" class="cta-button" style="background-color:#00C9FF; color:#172C3E; text-decoration:none; padding:16px 48px; border-radius:24px; font-weight:bold; font-size:1.3rem; transition:all 0.3s ease;">
+        Календарь встреч
+      </a>
+      <a href="https://t.me/Yury_Telegramm" class="cta-button" style="background-color:#fff; color:#667eea; text-decoration:none; padding:16px 48px; border-radius:24px; font-weight:bold; font-size:1.3rem; transition:all 0.3s ease;">
+        Telegram
+      </a>
+    </div>
+   
+    <div class="footer" style="color:#cbeeff;">Your AI Crew</div>
+  </section>
+</body>
+</html>
